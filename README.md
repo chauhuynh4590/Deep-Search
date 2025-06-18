@@ -52,19 +52,19 @@ uv run streamlit run app.py
 
 ```mermaid
 graph TD
-    User --> StreamlitUI
-    StreamlitUI --> FastAPI
-    FastAPI --> ResearchCrew
-    ResearchCrew -->|Web Search/LLM| ExternalAPIs
-    ResearchCrew --> FastAPI
-    FastAPI --> StreamlitUI
-    StreamlitUI -->|Display/Download| User
+    User("User")
+    Streamlit("Streamlit UI<br/>(app.py)")
+    FastAPI("FastAPI Backend<br/>(api.py)")
+    Crew("Research Crew<br/>(agents.py)")
+    APIs("External APIs<br/>(LinkUp, Gemini)")
 
-    User[User]
-    StreamlitUI[Streamlit UI (app.py)]
-    FastAPI[FastAPI Backend (api.py)]
-    ResearchCrew[Research Crew (agents.py)]
-    ExternalAPIs[External APIs (LinkUp, Gemini)]
+    User --> Streamlit
+    Streamlit --> FastAPI
+    FastAPI --> Crew
+    Crew -->|Web Search/LLM| APIs
+    Crew --> FastAPI
+    FastAPI --> Streamlit
+    Streamlit -->|Display/Download| User
 ```
 
 ---
