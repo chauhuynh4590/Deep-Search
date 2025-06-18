@@ -1,6 +1,6 @@
 # Agentic Deep Researcher
 
-A web-based research assistant that combines a FastAPI backend and a Streamlit frontend, orchestrating multi-agent research workflows to answer complex queries and generate detailed reports.
+A web-based assistant that delivers deep research answers by combining real-time information retrieval with LLM knowledge.
 
 ---
 
