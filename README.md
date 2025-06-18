@@ -8,8 +8,8 @@ A web-based research assistant that combines a FastAPI backend and a Streamlit f
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd deep-research
+git clone https://github.com/chauhuynh4590/Deep-Search.git
+cd Deep-Search
 ```
 
 ### 2. Sync Dependencies with uv
