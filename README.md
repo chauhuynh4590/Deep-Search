@@ -4,7 +4,35 @@ A web-based research assistant that combines a FastAPI backend and a Streamlit f
 
 ---
 
-## 🚀 Setup Instructions
+## 🚀 Setup
+
+### Installing `uv` (Python package manager)
+
+This project uses [`uv`](https://github.com/astral-sh/uv) for fast dependency management. If you don't have `uv` installed, follow the steps below:
+
+#### 1. Check if you have `uv` installed:
+
+```bash
+uv --version
+```
+If you see a version number, you already have `uv` installed. If you get a "command not found" error, install it using one of the following methods:
+
+#### 2. Install `uv`
+
+- **Using pipx (recommended):**
+  ```bash
+  pipx install uv
+  ```
+- **Using pip:**
+  ```bash
+  pip install uv
+  ```
+- **Using Homebrew (macOS):**
+  ```bash
+  brew install uv
+  ```
+
+For more information, see the [official uv installation guide](https://github.com/astral-sh/uv#installation).
 
 ### 1. Clone the Repository
 ```bash
