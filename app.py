@@ -145,7 +145,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 with st.form("query_form"):
-    text_input = st.text_area("Enter your question or prompt (optional)")
+    text_input = st.text_area("Enter your question (optional)")
     uploaded_file = st.file_uploader(
         "Upload a file (image, PDF, DOCX) (optional)", type=SUPPORTED_FILE_TYPES)
     submit = st.form_submit_button("Submit")
