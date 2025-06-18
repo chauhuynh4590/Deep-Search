@@ -58,6 +58,12 @@ uv run uvicorn api:app --reload --port 8000
 ```
 
 ### 5. Run the Frontend (Streamlit)
+
+---
+
+**Note:** The first time you use features that involve uploading files or images (such as document/image OCR), the process may take longer. This is because the application uses the `docling` library for OCR, which will automatically download the necessary AI models on first use. Subsequent uses will be much faster.
+
+---
 ```bash
 uv run streamlit run app.py
 ```
