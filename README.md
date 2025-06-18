@@ -48,15 +48,23 @@ uv run streamlit run app.py
 
 ## 🏗️ System Architecture
 
+> **Note:** Mermaid diagrams render in GitHub and supported Markdown viewers. If you see a rendering error, view this file on GitHub or a compatible tool.
+
 ```mermaid
 graph TD
-    A[User] -- Query/File --> B[Streamlit UI (app.py)]
-    B -- API Call --> C[FastAPI Backend (api.py)]
-    C -- Orchestrate --> D[Research Crew (agents.py)]
-    D -- Web Search/LLM --> E[External APIs (LinkUp, Gemini)]
-    D -- Result --> C
-    C -- Result --> B
-    B -- Display/Download --> A
+    User --> StreamlitUI
+    StreamlitUI --> FastAPI
+    FastAPI --> ResearchCrew
+    ResearchCrew -->|Web Search/LLM| ExternalAPIs
+    ResearchCrew --> FastAPI
+    FastAPI --> StreamlitUI
+    StreamlitUI -->|Display/Download| User
+
+    User[User]
+    StreamlitUI[Streamlit UI (app.py)]
+    FastAPI[FastAPI Backend (api.py)]
+    ResearchCrew[Research Crew (agents.py)]
+    ExternalAPIs[External APIs (LinkUp, Gemini)]
 ```
 
 ---
