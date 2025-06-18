@@ -26,7 +26,7 @@ Edit `.env` and provide your actual API keys and settings.
 
 ### 4. Run the Backend (FastAPI)
 ```bash
-uv run api:app --reload --port 8000
+uv run uvicorn api:app --reload --port 8000
 ```
 
 ### 5. Run the Frontend (Streamlit)
