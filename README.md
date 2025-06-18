@@ -82,7 +82,6 @@ uv run streamlit run app.py
 
 ## 🏗️ System Architecture
 
-> **Note:** Mermaid diagrams render in GitHub and supported Markdown viewers. If you see a rendering error, view this file on GitHub or a compatible tool.
 
 ```mermaid
 graph TD
