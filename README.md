@@ -52,6 +52,19 @@ cp .env.example .env
 ```
 Edit `.env` and provide your actual API keys and settings.
 
+#### How to Get API Keys
+
+- **Gemini (Google AI):**
+  1. Go to the [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your Google account.
+  2. Click on "Create API key" and follow the instructions.
+  3. Copy the generated API key and add it to your `.env` file as `GEMINI_API_KEY`.
+
+- **LinkUp:**
+  1. Visit the [LinkUp API Console](https://console.linkup.dev/) and log in or create an account.
+  2. Navigate to the API Keys section.
+  3. Create a new API key if needed, then copy it and add it to your `.env` file as `LINKUP_API_KEY`.
+
+
 ### 4. Run the Backend (FastAPI)
 ```bash
 uv run uvicorn api:app --reload --port 8000
