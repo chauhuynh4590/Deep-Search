@@ -60,7 +60,7 @@ Edit `.env` and provide your actual API keys and settings.
   3. Copy the generated API key and add it to your `.env` file as `GEMINI_API_KEY`.
 
 - **LinkUp:**
-  1. Visit the [LinkUp API Console](https://console.linkup.dev/) and log in or create an account.
+  1. Visit the [LinkUp API Console](https://app.linkup.so/sign-in) and log in or create an account.
   2. Navigate to the API Keys section.
   3. Create a new API key if needed, then copy it and add it to your `.env` file as `LINKUP_API_KEY`.
 
