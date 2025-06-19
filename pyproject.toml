@@ -1,7 +1,7 @@
 [project]
 name = "deep-research"
 version = "0.1.0"
-description = "Add your description here"
+description = "A web-based assistant that delivers deep research answers by combining real-time information retrieval with LLM knowledge."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
